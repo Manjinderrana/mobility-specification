@@ -15,7 +15,7 @@ function getStringAfterEquals(inputString) {
 
 async function readBuildFile(branchName, isError) {
   if (!branchName) return;
-  const url = `https://github.com/Manjinderrana/mobility-specification/blob/mobility-ui/ui/build.js?ref=${branchName}`;
+  const url = `https://api.github.com/repos/Manjinderrana/mobility-specification/contents/ui/build.js?${branchName}`;
 
   try {
     const {first, second} = tokens;  
