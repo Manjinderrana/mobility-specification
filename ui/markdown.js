@@ -49,7 +49,7 @@ function renderDropdownMarkdown(branchname, filteredData) {
 function renderMarkdown(branchName, file) {
   console.log("file---", file);
   fetch(
-    `https://raw.githubusercontent.com/ondc-official/mobility-specification/${branchName}/api/components/docs/${file}.md`
+    `https://raw.githubusercontent.com/Manjinderrana/mobility-specification/${branchName}/api/components/docs/${file}.md`
   )
     .then((response) => response.text())
     .then(async (text) => {
